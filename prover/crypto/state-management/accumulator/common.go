@@ -25,7 +25,7 @@ type Trace interface {
 	DeferMerkleChecks(config *smt.Config, appendTo []smt.ProvedClaim) []smt.ProvedClaim
 	// HKey returns the HKey of the trace
 	HKey(cfg *smt.Config) Bytes32
-	// RWInt returns 0 is the trace is a read-only operation and 1 if it is a
+	// RWInt returns 0 if the trace is a read-only operation and 1 if it is a
 	// read-write operation.
 	RWInt() int
 }
